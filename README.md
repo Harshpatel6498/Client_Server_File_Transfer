@@ -31,32 +31,33 @@ POSIX-compliant system (Linux, macOS, or WSL on Windows)
 
 ## Compilation 🛠
 To compile the project, run the following command in the root directory of the repository:
-
+````
 make
-
+````
 
 ## Usage 🚀
 ### Server and Mirror
 To start the server and the mirror, run the following commands on separate machines or terminals:
-
+````
 ./mirror <mirror_port>
-
-
+````
+````
 ./server <server_port> <mirror_ip> <mirror_port>
-
+````
 ### Client
 To connect to the server and send a request, run the following command:
-
+````
 ./client <server_ip> <port>
 
-
+````
 
 
 ## List of Client Commands 📜
-
+````
 findfile <filename>
 sgetfiles <size1> <size2> <-u>
 dgetfiles <date1> <date2> <-u>
 getfiles <file1> <file2> ... <file6> <-u>
 gettargz <extension_list> <-u>
 quit
+````
